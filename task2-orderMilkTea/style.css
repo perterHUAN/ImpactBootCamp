@@ -1,0 +1,88 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  --clr-black: #434343;
+  --clr-white: white;
+  --clr-blue: #1677ff;
+}
+header {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  background-color: var(--clr-black);
+  padding: 1.5rem 0;
+}
+header img {
+  width: 15%;
+  transition-property: transform;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  border-radius: 0.5rem;
+}
+header img:hover {
+  transform: rotate(30deg);
+}
+body {
+  background-color: var(--clr-white);
+}
+main {
+  width: 24em;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+main .row {
+  margin-bottom: 1em;
+}
+
+main .row .name {
+  display: inline-block;
+  text-align: right;
+  margin-right: 1em;
+  width: 8em;
+}
+main .row .name::after {
+  content: ":";
+}
+
+.content {
+  width: 10em;
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+}
+label input {
+  margin-right: 0.5em;
+}
+
+main .row:last-child {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  margin-top: 3em;
+  margin-bottom: 2em;
+}
+button {
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 0.4rem;
+}
+
+button.submit {
+  background-color: var(--clr-blue);
+  color: var(--clr-white);
+}
+.go_back {
+  position: fixed;
+  right: 1em;
+  bottom: 1em;
+  width: 2.4em;
+  border: 0.1em solid #a99696;
+  text-align: center;
+  border-radius: 0.4em;
+  font-size: 0.8rem;
+  display: none;
+}

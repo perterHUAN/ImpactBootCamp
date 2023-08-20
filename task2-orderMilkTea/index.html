@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>order milk tea</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="milk_tea_show">
+      <img src="./image/mt1.jpg" alt="milk tea" />
+      <img src="./image/mt2.jpg" alt="milk tea" />
+      <img src="./image/mt3.jpg" alt="milk tea" />
+      <img src="./image/mt4.jpg" alt="milk tea" />
+    </header>
+
+    <main>
+      <form>
+        <div class="row">
+          <span class="name">奶茶口味</span>
+          <span class="content">
+            <label>
+              <input
+                type="radio"
+                name="口味"
+                value="芋泥波波"
+                checked
+              />芋泥波波
+            </label>
+
+            <label>
+              <input type="radio" name="口味" value="芝芝桃桃 " />芝芝桃桃
+            </label>
+
+            <label>
+              <input type="radio" name="口味" value="多肉葡萄 " />多肉葡萄
+            </label>
+          </span>
+        </div>
+
+        <div class="row">
+          <span class="name"> 几杯 </span>
+          <span class="content">
+            <input type="number" min="1" value="1" required name="数量" />
+          </span>
+        </div>
+
+        <div class="row">
+          <span class="name"> 杯型 </span>
+          <span class="content">
+            <label>
+              <input type="radio" value="超大杯 " name="杯型" checked />超大杯
+            </label>
+            <label> <input type="radio" value="大杯" name="杯型" />大杯</label>
+            <label> <input type="radio" value="中杯" name="杯型" />中杯</label>
+          </span>
+        </div>
+
+        <div class="row">
+          <span class="name"> 甜度 </span>
+          <span class="content">
+            <select name="甜度" id="">
+              <option value="全糖">全糖</option>
+              <option value="无糖">无糖</option>
+              <option value="三分糖">三分糖</option>
+              <option value="五分糖">五分糖</option>
+            </select>
+          </span>
+        </div>
+
+        <div class="row">
+          <span class="name">免费小料</span>
+          <span class="content">
+            <label
+              ><input type="checkbox" name="免费小料" value="波霸" />波霸</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                name="免费小料"
+                value="西米露"
+              />西米露</label
+            >
+            <label
+              ><input type="checkbox" name="免费小料" value="椰果" />椰果</label
+            >
+            <label
+              ><input type="checkbox" name="免费小料" value="茶冻" />茶冻</label
+            >
+            <label
+              ><input type="checkbox" name="免费小料" value="红豆" />红豆</label
+            >
+            <label
+              ><input type="checkbox" name="免费小料" value="仙草" />仙草</label
+            >
+          </span>
+        </div>
+
+        <div class="row">
+          <span class="name">加价小料</span>
+          <span class="content">
+            <label>
+              <input
+                type="checkbox"
+                name="加价小料"
+                value="冰淇淋"
+              />冰淇淋（¥4）
+            </label>
+            <label>
+              <input
+                type="checkbox"
+                name="加价小料"
+                value="布丁（¥3）"
+              />布丁（¥3）
+            </label>
+            <label>
+              <input
+                type="checkbox"
+                name="加价小料"
+                value="奶露（¥2）"
+              />奶露（¥2）
+            </label>
+          </span>
+        </div>
+
+        <div class="row">
+          <span class="name">是否加冰</span>
+          <span class="content">
+            <label>
+              <input type="radio" name="是否加冰" value="是" checked />是
+            </label>
+            <label> <input type="radio" name="是否加冰" value="否" />否 </label>
+          </span>
+        </div>
+
+        <div class="row">
+          <span class="name">是否去茶底</span>
+          <span class="content">
+            <label>
+              <input type="radio" name="是否去茶底" value="是" checked />是
+            </label>
+            <label>
+              <input type="radio" name="是否去茶底" value="否" />否
+            </label>
+          </span>
+        </div>
+
+        <div class="row">
+          <span class="name">你的地址</span>
+          <span class="content">
+            <textarea name="地址" id="" cols="30" rows="10" required></textarea>
+          </span>
+        </div>
+
+        <div class="row">
+          <span class="name">你的手机号</span>
+          <span class="content">
+            <input type="tel" name="手机号" required />
+          </span>
+        </div>
+
+        <div class="row">
+          <span class="name">期待送达的时间</span>
+          <span class="content">
+            <input
+              type="date"
+              class="arrive_time"
+              name="期待送达时间"
+              required
+            />
+          </span>
+        </div>
+
+        <div class="row">
+          <span class="name">备注</span>
+          <span class="content">
+            <textarea name="备注" id="" cols="30" rows="10"></textarea>
+          </span>
+        </div>
+
+        <div class="row">
+          <span class="name">支付方式</span>
+          <span class="content">
+            <label>
+              <input
+                type="radio"
+                name="支付方式"
+                value="微信支付"
+                checked
+              />微信支付
+            </label>
+            <label>
+              <input type="radio" name="pay method" value="支付宝" />支付宝
+            </label>
+          </span>
+        </div>
+        <div class="row">
+          <button class="submit" type="submit">提交</button>
+          <button class="reset" type="reset">重置</button>
+        </div>
+      </form>
+    </main>
+    <div class="go_back">回到顶部</div>
+    <script src="./showOrder.js"></script>
+  </body>
+</html>
