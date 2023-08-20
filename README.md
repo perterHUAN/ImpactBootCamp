@@ -7,4 +7,4 @@
 2. 实现“奶茶预定网站”
    - [任务文档](https://erdong-fe.github.io/FeProject2Dong/01.JavaScript/02.OrderMilkTea/)
    - [在线预览](https://erdong-fe.github.io/FeProject2Dong/01.JavaScript/02.OrderMilkTea/demo.html)
-   - [我的实现预览]()
+   - [我的实现预览](https://perterhuan.github.io/ImpactBootCamp/task2-orderMilkTea/)
