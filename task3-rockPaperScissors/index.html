@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>石头剪刀布</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main>
+      <p id="currentRound" class="">第1个回合（3回合）</p>
+      <div class="players">
+        <div id="robot" class="player">
+          <div class="gesture">
+            <span>?</span>
+            <img src="./images/rock.png" alt="rock" class="rockImg" />
+            <img src="./images/paper.png" alt="paper" class="paperImg" />
+            <img src="./images/scissor.png" alt="scissor" class="scissorImg" />
+          </div>
+          <p class="actor">机器人</p>
+          <p class="score">
+            胜: <span class="win">0</span> | 负: <span class="lose">0</span>
+          </p>
+        </div>
+        <div id="me" class="player">
+          <div class="gesture">
+            <span>?</span>
+            <img src="./images/rock.png" alt="rock" class="rockImg" />
+            <img src="./images/paper.png" alt="paper" class="paperImg" />
+            <img src="./images/scissor.png" alt="scissor" class="scissorImg" />
+          </div>
+          <p class="actor">Me</p>
+          <p class="score">
+            胜: <span class="win">0</span> | 负: <span class="lose">0</span>
+          </p>
+        </div>
+      </div>
+      <p id="result" class="">你赢了</p>
+      <button id="nextRound" class="show">下一个回合</button>
+    </main>
+
+    <dialog id="gestureChoose">
+      <form>
+        <p>
+          <label
+            >请选择要出的手势:
+            <select>
+              <option value="0">石头</option>
+              <option value="1">剪刀</option>
+              <option value="2">布</option>
+            </select>
+          </label>
+        </p>
+        <p>
+          <button value="0" id="comfirmBtn" formmethod="dialog">确定</button>
+        </p>
+      </form>
+    </dialog>
+    <script src="script.js"></script>
+  </body>
+</html>

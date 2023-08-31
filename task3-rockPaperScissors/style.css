@@ -1,0 +1,120 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #ffec3d;
+}
+
+main {
+  width: 60em;
+  max-width: 80%;
+  margin: 5rem auto;
+  text-align: center;
+}
+#currentRound {
+  margin-bottom: 2rem;
+}
+.players {
+  display: flex;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.player {
+  flex: 1 1 50%;
+}
+.gesture {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.actor {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.score {
+  font-size: 1.2rem;
+}
+
+#nextRound {
+  text-align: center;
+  display: inline-block;
+  margin: 3rem auto;
+  width: 8em;
+  height: 2.5em;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  border-radius: 0.5rem;
+}
+#result,
+#currentRound,
+#nextRound {
+  display: none;
+}
+
+#result.show,
+#currentRound.show,
+#nextRound.show {
+  display: block;
+}
+
+#currentRound {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+#result {
+  font-size: 2rem;
+}
+.gesture img {
+  display: none;
+}
+.gesture.rock .rockImg {
+  display: inline-block;
+}
+
+.gesture.rock span {
+  display: none;
+}
+
+.gesture.paper .paperImg {
+  display: inline-block;
+}
+
+.gesture.paper span {
+  display: none;
+}
+
+.gesture.scissor .scissorImg {
+  display: inline-block;
+}
+
+.gesture.scissor span {
+  display: none;
+}
+
+#gestureChoose {
+  text-align: center;
+  padding: 1rem 2rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+  border-radius: 0.3rem;
+}
+#gestureChoose form p:first-child {
+  margin-bottom: 1rem;
+}
+#gestureChoose select {
+  padding: 0.4rem;
+  margin-left: 0.5em;
+}
+#comfirmBtn {
+  padding: 0.3rem 0.5rem;
+  background-color: #1677ff;
+  color: white;
+  border-radius: 0.2rem;
+
+  border: none;
+}

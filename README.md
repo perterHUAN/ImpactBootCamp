@@ -8,3 +8,7 @@
    - [任务文档](https://erdong-fe.github.io/FeProject2Dong/01.JavaScript/02.OrderMilkTea/)
    - [在线预览](https://erdong-fe.github.io/FeProject2Dong/01.JavaScript/02.OrderMilkTea/demo.html)
    - [我的实现预览](https://perterhuan.github.io/ImpactBootCamp/task2-orderMilkTea/)
+3. 实现“石头剪刀布”游戏
+   - [任务文档](https://erdong-fe.github.io/FeProject2Dong/01.JavaScript/03.RockPaperScissors/)
+   - [在线预览](https://erdong-fe.github.io/FeProject2Dong/01.JavaScript/03.RockPaperScissors/demo.html)
+   - [我的实现预览](https://perterhuan.github.io/ImpactBootCamp/task3-rockPaperScissors/)
